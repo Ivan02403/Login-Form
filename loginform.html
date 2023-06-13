@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="8-UTF">
+		<meta name="viewport" content="width=device-width, initial-scale1.0">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+		<title>Log in</title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				font-family: 'Ubuntu', sans-serif;
+			}
+
+			body{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+				background:linear-gradient(135deg,#0B1629, #122543, #8CC4DF );
+				padding: 10px;
+			}
+
+			.container{
+				background:linear-gradient(135deg,#8CC4DF, #122543, #0B1629) ;
+				max-width: 600px;
+				padding: 25px 30px;
+				width: 100%;
+				border-radius: 25px;
+			}
+
+			.container .headings{
+				color: whitesmoke;
+				text-align: center;
+				font-weight: 700;
+				font-size: 2rem;
+				position: relative;
+				padding: 0 0 20px 0;
+			}
+
+			.container .headings::before{
+				content:'';
+				background-color: whitesmoke;
+				height: 3px;
+				width: 100%;
+				border: 3px;
+				position:absolute;
+				bottom: 100px;
+				left: 0;
+				bottom: 0;
+				
+			}
+
+			.container form .card-details{
+				display: flex;
+				flex-direction: column;
+				margin-top: 15px;
+				align-items: center;
+				width: 100%;
+			}
+
+
+			.container form .card-box{
+				width: calc(100% / 1 - 20px);
+				margin-bottom: 15px;
+			}
+
+			form .card-box .card-title{
+				font-size: 1rem;
+				font-weight: 500;
+				display: block;
+				color: whitesmoke;
+				margin-bottom: 5px;
+			}
+
+			form .card-box input{
+				padding-left: 15px;
+				height: 45px;
+				outline: none;
+				border-radius: 5px;
+				border-bottom-width: 2px ;
+				width: 100%;
+				font-size: 1rem;
+				transition: all 0.3s ease;
+			}
+
+			.container form .remember{
+				margin-bottom: 10px;
+				
+			}
+
+			form .remember  .remember-me{
+				color:whitesmoke;
+			}
+
+			form .remember input{
+				margin-left: 10px;
+				margin-right: 5px;
+			}
+
+			.container form .button{
+				text-align: center;
+			}
+
+			form .button input{
+				padding:10px;
+				width:50%;
+				background-color: #0B1629;
+				color: whitesmoke;
+				letter-spacing: 1px;
+				border-radius: 10px;
+				font-weight: 700;
+				border:none;
+				font-size: 18px;
+				height: 100%;
+				margin-top: 10px;
+			}
+
+			form .button input:hover{
+				background-color: whitesmoke;
+				color:#0B1629
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="headings">Sign up</div>
+			<form>
+				<div class="card-details">
+					<div class="card-box">
+						<label for="email" class="card-title">Email</label>
+						<input id="email" type="email" placeholder="Enter your email">
+					</div>
+
+					<div class="card-box">
+						<label for="pass" class="card-title">Password</label>
+						<input id="pass" name="pass" type="email" placeholder="Enter your password">
+					</div>
+				</div>
+				<div class="remember">
+					<input type="checkbox">
+					<label for="check" class="remember-me">remember me</label>
+				</div>
+				<div class="button">
+					<input type="submit" value="Login">
+				</div>
+			</form>
+			
+		</div>
+	</body>
+</html>
